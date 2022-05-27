@@ -6,6 +6,9 @@
     "main": "./dist/index.js",
     "module": "./dist/safe-context.esm.js",
     "types": "./dist/safe-context.d.ts",
+    "publishConfig": {
+        "access": "public"
+    },
     "files": [
         "dist"
     ],
