@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useSafeContext should throw error if not wrapped into provider (no display name) 1`] = `"Invariant failed: Trying to access SafeContext outside provider."`;
+
+exports[`useSafeContext should throw error if not wrapped into provider 1`] = `"Invariant failed: Trying to access SampleContext outside provider."`;

@@ -1,0 +1,57 @@
+{
+    "name": "@sirse-dev/safe-context",
+    "version": "0.0.0",
+    "description": "Safe React context",
+    "main": "./dist/index.js",
+    "module": "./dist/safe-context.esm.js",
+    "types": "./dist/safe-context.d.ts",
+    "files": [
+        "dist"
+    ],
+    "size-limit": [
+        {
+            "path": "dist/safe-context.cjs.production.min.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/safe-context.esm.js",
+            "limit": "10 KB"
+        }
+    ],
+    "scripts": {
+        "build": "aqu build",
+        "start": "aqu watch",
+        "lint": "eslint .",
+        "lint:fix": "aqu lint --fix",
+        "test": "jest",
+        "test:watch": "aqu test --passWithNoTests --watch",
+        "test:coverage": "aqu test --silent --ci --coverage --coverageReporters=\"text\" --coverageReporters=\"text-summary\"",
+        "prepare": "aqu build",
+        "release": "np",
+        "size": "size-limit",
+        "size:why": "size-limit --why"
+    },
+    "author": "Artiom Tretjakovas <artiom.tretjakovas2@gmail.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/ArtiomTr/safe-context#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ArtiomTr/safe-context.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ArtiomTr/safe-context/issues"
+    },
+    "devDependencies": {
+        "@size-limit/preset-small-lib": "^7.0.8",
+        "@testing-library/react": "^13.2.0",
+        "@types/jest": "^27.5.1",
+        "@types/node": "^17.0.35",
+        "@types/react": "^18.0.9",
+        "aqu": "0.3.2",
+        "np": "^7.6.1",
+        "react": "^18.1.0",
+        "size-limit": "^7.0.8",
+        "tiny-invariant": "^1.2.0",
+        "typescript": "^4.7.2"
+    }
+}
