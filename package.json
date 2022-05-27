@@ -1,5 +1,6 @@
 {
     "name": "@sirse-dev/safe-context",
+    "private": false,
     "version": "0.0.0",
     "description": "Safe React context",
     "main": "./dist/index.js",
